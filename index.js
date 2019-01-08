@@ -7,7 +7,24 @@
 //let은 변수의 선언
 //const는 변수의 선언, const는 값이 초기화 이후 변하지 않음
 //var은 variable, let과의 차이점은..
+/*
 const a = 221;
 let b = a - 5;
 //a = 4;  //변수의 업데이트, const이므로 오류 발생
 console.log(b, a);
+*/
+
+//변수 값 변경이 필요하기 전까지는 const를 사용하자.
+//변수의 종류
+
+//string = "문자열"
+const what = "nicolas";
+
+//Boolean = true/false
+const wat = true;
+
+//Number = 숫자;
+const wa = 666;
+
+//float = 소수;
+const w = 55.1;
