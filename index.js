@@ -43,3 +43,36 @@ const daysOfWeek = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun", true]
 
 console.log(daysOfWeek);
 
+//변수를 한번에 묶는 방법2 = Object
+const nicoInfo = ["Nicolas","55","true","Seoul"]    //다음과 같이 Array는 부적잘하다.
+
+//Object의 생성 방법
+//object는 각각의 variable과 그에 상응하는 값을 가지고 있다.
+//object 내에 object, array를 보유 가능
+const nicolasInfo = {
+    name: "Nicolase",
+    age:33,
+    gender:"Male",
+    isHandsome:true,
+    favMovies: ["Alogng the gods",
+    "Lotr","Oldboy"],
+    favFood:[
+        {
+            name:"Kimchi", 
+            fatty:false
+        },
+        {
+            name : "ChessBurger",
+            fatry:true
+        }
+    ]
+}
+
+//Object의 요소에 접근 방법
+console.log(nicolasInfo.gender);
+nicolasInfo.gender="FeMale";
+console.log(nicolasInfo.gender);
+
+console.log(nicolasInfo);
+//object내의 array내의 object에 접근
+console.log(nicolasInfo.favFood[0].name);
