@@ -28,3 +28,18 @@ const wa = 666;
 
 //float = 소수;
 const w = 55.1;
+
+//변수를 정리하는 방법
+//array는 list처럼 정리를 하는 것이다.
+//변수의 작명규칙 -> 첫 단어는 소문자+그 이후부터 단어 맨 앞글자는 대문자
+const mon = "Mon;"
+const tue = "Tue;"
+const wed = "Wed;"
+const thu = "Thu;"
+const fri = "Fri;"
+//다음 변수들을 한번에 묶는 방법 = array
+//array의 요소를 찾는 방법 = 배열이름[index] 단, index는 0부터 시작
+const daysOfWeek = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun", true]
+
+console.log(daysOfWeek);
+
