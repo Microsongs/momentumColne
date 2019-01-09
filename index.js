@@ -76,3 +76,19 @@ console.log(nicolasInfo.gender);
 console.log(nicolasInfo);
 //object내의 array내의 object에 접근
 console.log(nicolasInfo.favFood[0].name);
+
+console.log(console);
+//function : 함수, 어떤 걸 수행하려는 한 부분
+//함수를 사용함으로써 반복적인 요소를 줄일 수 있음
+console.log("Greetings Nicolas");
+console.log("hello Jun");
+console.log("hello Liyn");
+console.log("hello Dal");
+
+function sayHello(name ,age){
+    console.log('hello',name,"you have",age,"years of age.");
+}
+
+//함수 호출
+sayHello('dragon',15);
+
