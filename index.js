@@ -14,6 +14,7 @@ let b = a - 5;
 console.log(b, a);
 */
 
+/*
 //변수 값 변경이 필요하기 전까지는 const를 사용하자.
 //변수의 종류
 
@@ -92,3 +93,26 @@ function sayHello(name ,age){
 //함수 호출
 sayHello('dragon',15);
 
+*/
+function sayHello(name,age){
+    //console.log("Hello" + name + "you are" + age + "years old");
+    //console.log(`Hello ${name} you are ${age} years old`);  //back tick(`)을 사용한다.
+    return `Hello ${name} you are ${age} years old`;
+}
+
+//sayHello("Nicolas",15);
+const greetNicolas = sayHello("Nicolas",14);    //함수의 반환값을 greetNicolas에 대입
+
+console.log(greetNicolas);
+
+const calculator = {
+    plus : (a, b) => a+b
+    /*
+    plus : function(a,b){
+        return a+b;
+    }
+    */
+}
+
+const plus = calculator.plus(5, 5);
+console.log(plus);
