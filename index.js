@@ -94,6 +94,9 @@ function sayHello(name ,age){
 sayHello('dragon',15);
 
 */
+
+//2-1-2
+/*
 function sayHello(name,age){
     //console.log("Hello" + name + "you are" + age + "years old");
     //console.log(`Hello ${name} you are ${age} years old`);  //back tick(`)을 사용한다.
@@ -107,12 +110,26 @@ console.log(greetNicolas);
 
 const calculator = {
     plus : (a, b) => a+b
-    /*
-    plus : function(a,b){
-        return a+b;
+    minus : function(a,b){
+        return a-b;
     }
-    */
 }
 
 const plus = calculator.plus(5, 5);
 console.log(plus);
+*/
+
+//2-2
+console.log(document);  //HTML Document
+
+//const title = document.getElementById('title');
+const title = document.querySelector('#title');
+console.log(title);
+
+//DOM = Document Object Model
+title.innerHTML = "HI! From js";
+title.style.color="red"
+
+console.dir(title);
+console.dir(document);
+document.title="I own you now"
