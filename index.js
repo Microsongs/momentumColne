@@ -220,3 +220,29 @@ function handleOnline(){
 navigator.addEventListener("offline",handleOffline);
 navigator.addEventListener("online",handleOnline);
 */
+//2-7
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick(){
+    title.classList.toggle(CLICKED_CLASS);  //js에 의해 아래 기능 수행
+    //const currentClass = title.className;
+    /*
+    const hasClass = title.classList.contains(CLICKED_CLASS);   //clicked 클래스를 가지고있으면 true 아니면 false
+    if(hasClass){
+        //title.className = CLICKED_CLASS;    
+        title.classList.remove(CLICKED_CLASS);  //클래스 이름 자체를 제거
+    }
+    else{
+        //title.className = "";
+        title.classList.add(CLICKED_CLASS); //클래스 이름 자체를 추가
+    }
+    */
+}
+
+function init(){
+    title.addEventListener("click",handleClick);
+}
+
+init();
