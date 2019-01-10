@@ -166,3 +166,57 @@ else{
     console.log('too young');
 }
 */
+//2-4
+/*
+//이벤트 : 
+const title = document.querySelector("#title");
+
+function handleResize(event){
+    console.log(event);
+    console.log("I have been resized");
+}
+window.addEventListener("resize", handleResize);    //윈도우가 resize되는 이벤트 발생 시 handleResize 함수를 호출
+
+function handleClick(){
+    title.style.color="red";
+}
+
+title.addEventListener("click",handleClick);
+*/
+/*
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#7f8c8d";
+
+function handleClick(){
+    const currentColor = title.style.color;
+    if(currentColor === BASE_COLOR){
+        console.log("true");
+        title.style.color = OTHER_COLOR;
+    }
+    else{
+        console.log("false");
+        title.style.color = BASE_COLOR;
+    }
+}
+
+function init(){
+    title.style.color= BASE_COLOR;
+    //title.addEventListener("click",handleClick);
+    title.addEventListener("mouseenter",handleClick);
+}
+
+init();
+
+function handleOffline(){
+    console.log('bye');
+}
+
+function handleOnline(){
+    console.log('welcome back');
+}
+
+navigator.addEventListener("offline",handleOffline);
+navigator.addEventListener("online",handleOnline);
+*/
