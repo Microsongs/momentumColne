@@ -120,6 +120,7 @@ console.log(plus);
 */
 
 //2-2
+/*
 console.log(document);  //HTML Document
 
 //const title = document.getElementById('title');
@@ -133,3 +134,35 @@ title.style.color="red"
 console.dir(title);
 console.dir(document);
 document.title="I own you now"
+*/
+/*
+//2-5
+if('10' === 10){  //if(조건)
+    console.log("hi");   //실행
+}
+else if('10' === '10'){
+    console.log('lalala');
+}
+else{
+    console.log("no");
+}
+
+if(20 > 5 || 'nicloas' === 'nicolas'){
+    console.log('yes')
+}
+else{
+    console.log('no')
+}
+
+const age = prompt('how old are you');
+
+if(age >= 18 && age <= 21){
+    console.log('you can drink but you should not');
+}
+else if(age > 21){
+    console.log('go ahead');
+}
+else{
+    console.log('too young');
+}
+*/
